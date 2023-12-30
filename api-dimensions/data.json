@@ -1,0 +1,144 @@
+{
+    "name": "api-governance",
+    "label": "API Governance",
+    "children": [
+        {
+            "name": "software-dimension",
+            "label": "Software Dimension"
+        },
+        {
+            "name": "social-dimension",
+            "label": "Social Dimension"
+        },
+        {
+            "name": "business-dimension",
+            "label": "Business Dimension"
+        },
+        {
+            "name": "platform-dimension",
+            "label": "Platform Dimension",
+            "children": [
+                {
+                    "name": "tools",
+                    "label": "Tools",
+                    "children": [
+                        {
+                            "name": "gateway",
+                            "label": "Gateway",
+                            "children": [
+                                {
+                                    "name": "operational-model",
+                                    "label": "Operational Model",
+                                    "children": [
+                                        {
+                                            "name": "x-as-a-service",
+                                            "label": "X as a Service"
+                                        },
+                                        {
+                                            "name": "x-as-a-ticket",
+                                            "label": "X as a Ticket"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "api-manager",
+                            "label": "API Manager",
+                            "children": [
+                                {
+                                    "name": "operational-model",
+                                    "label": "Operational Model",
+                                    "children": [
+                                        {
+                                            "name": "x-as-a-service",
+                                            "label": "X as a Service"
+                                        },
+                                        {
+                                            "name": "x-as-a-ticket",
+                                            "label": "X as a Ticket"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "automation",
+                            "label": "Automation",
+                            "children": [
+                                {
+                                    "name": "compliance-checks-linters",
+                                    "label": "Compliance Checks (linter)"
+                                },
+                                {
+                                    "name": "code-generation",
+                                    "label": "Code Generation"
+                                },
+                                {
+                                    "name": "test-runner",
+                                    "label": "Test Runner"
+                                },
+                                {
+                                    "name": "ci-cd-platform",
+                                    "label": "CI/CD Platform"
+                                },
+                                {
+                                    "name": "datasets-loader",
+                                    "label": "Datasets Loader for testing"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "wiki",
+                            "label": "Wiki"
+                        },
+                        {
+                            "name": "dev-portal",
+                            "label": "Dev Portal",
+                            "children": [
+                                {
+                                    "name": "operational-model",
+                                    "label": "Operational Model",
+                                    "children": [
+                                        {
+                                            "name": "x-as-a-service",
+                                            "label": "X as a Service"
+                                        },
+                                        {
+                                            "name": "x-as-a-ticket",
+                                            "label": "X as a Ticket"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "api-marketplace",
+                            "label": "API Marketplace",
+                            "children": [
+                                {
+                                    "name": "operational-model",
+                                    "label": "Operational Model",
+                                    "children": [
+                                        {
+                                            "name": "x-as-a-service",
+                                            "label": "X as a Service"
+                                        },
+                                        {
+                                            "name": "x-as-a-ticket",
+                                            "label": "X as a Ticket"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "governance-dimension",
+            "label": "Governance Dimension"
+        }
+    ]
+}
