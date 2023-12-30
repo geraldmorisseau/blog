@@ -1,36 +1,76 @@
 {
     "name": "api-governance",
     "label": "API Governance",
+    "subtitle": "The dimensions of a 360° API Governance",
+    "detail": [
+        {"paragraph" : "//TODO "},
+        {"paragraph" : "Lorem ipsum dolor sit amet, consectetur ad"}
+    ],
     "children": [
         {
             "name": "software-dimension",
             "label": "Software",
+            "subtitle": "The Software Dimension of APIs",
+            "detail": [
+                {"paragraph" : "//TODO "},
+                {"paragraph" : "Lorem ipsum dolor sit amet, consectetur ad"}
+            ],
             "children": [
                 {
                     "name": "api-provider-side",
                     "label": "Provider Side",
+                    "subtitle": "The Provider Side of APIs",
+                    "detail": [
+                        {"paragraph" : "//TODO "},
+                        {"paragraph" : "Lorem ipsum dolor sit amet, consectetur ad"}
+                    ],
                     "children": [
                         {
                             "name": "build",
-                            "label": "BUILD"
+                            "label": "BUILD",
+                            "subtitle": "The Provider Side : building APIs",
+                            "detail": [
+                                {"paragraph" : "//TODO "},
+                                {"paragraph" : "Lorem ipsum dolor sit amet, consectetur ad"}
+                            ]
                         },
                         {
                             "name": "run",
-                            "label": "RUN"
+                            "label": "RUN",
+                            "subtitle": "The Provider Side : running APIs",
+                            "detail": [
+                                {"paragraph" : "//TODO "},
+                                {"paragraph" : "Lorem ipsum dolor sit amet, consectetur ad"}
+                            ]
                         }
                     ]
                 },
                 {
                     "name": "api-consumer-side",
                     "label": "Consumer Side",
+                    "subtitle": "The Consumer Side of APIs",
+                    "detail": [
+                        {"paragraph" : "//TODO "},
+                        {"paragraph" : "Lorem ipsum dolor sit amet, consectetur ad"}
+                    ],
                     "children": [
                         {
                             "name": "build",
-                            "label": "BUILD"
+                            "label": "BUILD",
+                            "subtitle": "The Provider Side : building clients of APIs",
+                            "detail": [
+                                {"paragraph" : "//TODO "},
+                                {"paragraph" : "Lorem ipsum dolor sit amet, consectetur ad"}
+                            ]
                         },
                         {
                             "name": "run",
-                            "label": "RUN"
+                            "label": "RUN",
+                            "subtitle": "The Provider Side : running clients of APIs",
+                            "detail": [
+                                {"paragraph" : "//TODO "},
+                                {"paragraph" : "Lorem ipsum dolor sit amet, consectetur ad"}
+                            ]
                         }
                     ]
                 }
@@ -38,7 +78,12 @@
         },
         {
             "name": "social-dimension",
-            "label": "Social"
+            "label": "Social",
+            "subtitle": "The Social Dimension of APIs",
+            "detail": [
+                {"paragraph" : "//TODO "},
+                {"paragraph" : "Lorem ipsum dolor sit amet, consectetur ad"}
+            ]
         },
         {
             "name": "business-dimension",
@@ -47,22 +92,47 @@
         {
             "name": "platform-dimension",
             "label": "Platform",
+            "subtitle": "The platforms to manage APIs",
+            "detail": [
+                {"paragraph" : "//TODO "},
+                {"paragraph" : "Lorem ipsum dolor sit amet, consectetur ad"}
+            ],
             "children": [
                 {
                     "name": "gateway",
                     "label": "Gateway",
+                    "subtitle": "API Gateway",
+                    "detail": [
+                        {"paragraph" : "//TODO "},
+                        {"paragraph" : "Lorem ipsum dolor sit amet, consectetur ad"}
+                    ],
                     "children": [
                         {
-                            "name": "operational-model",
-                            "label": "Operational Model",
+                            "name": "user-experience",
+                            "label": "User Experience",
+                            "subtitle": "User Experience of the API Gateway",
+                            "detail": [
+                                {"paragraph" : "//TODO "},
+                                {"paragraph" : "Lorem ipsum dolor sit amet, consectetur ad"}
+                            ],
                             "children": [
                                 {
                                     "name": "x-as-a-service",
-                                    "label": "X as a Service"
+                                    "label": "X as a Service",
+                                    "subtitle": "X as a Service : Self Service oriented platform",
+                                    "detail": [
+                                        {"paragraph" : "//TODO "},
+                                        {"paragraph" : "Lorem ipsum dolor sit amet, consectetur ad"}
+                                    ]
                                 },
                                 {
                                     "name": "x-as-a-ticket",
-                                    "label": "X as a Ticket"
+                                    "label": "X as a Ticket",
+                                    "subtitle": "Ticketing",
+                                    "detail": [
+                                        {"paragraph" : "//TODO "},
+                                        {"paragraph" : "Lorem ipsum dolor sit amet, consectetur ad"}
+                                    ]
                                 }
                             ]
                         }
@@ -71,18 +141,38 @@
                 {
                     "name": "api-manager",
                     "label": "API Manager",
+                    "subtitle": "",
+                    "detail":[
+                        {"paragraph" : "//TODO "},
+                        {"paragraph" : "Lorem ipsum dolor sit amet, consectetur ad"}
+                    ],
                     "children": [
                         {
-                            "name": "operational-model",
-                            "label": "Operational Model",
+                            "name": "user-experience",
+                            "label": "User Experience",
+                            "subtitle": "User Experience of the API Manager",
+                            "detail": [
+                                {"paragraph" : "//TODO "},
+                                {"paragraph" : "Lorem ipsum dolor sit amet, consectetur ad"}
+                            ],
                             "children": [
                                 {
                                     "name": "x-as-a-service",
-                                    "label": "X as a Service"
+                                    "label": "X as a Service",
+                                    "subtitle": "X as a Service : Self Service oriented platform",
+                                    "detail": [
+                                        {"paragraph" : "//TODO "},
+                                        {"paragraph" : "Lorem ipsum dolor sit amet, consectetur ad"}
+                                    ]
                                 },
                                 {
                                     "name": "x-as-a-ticket",
-                                    "label": "X as a Ticket"
+                                    "label": "X as a Ticket",
+                                    "subtitle": "X as a Ticket",
+                                    "detail": [
+                                        {"paragraph" : "//TODO "},
+                                        {"paragraph" : "Lorem ipsum dolor sit amet, consectetur ad"}
+                                    ]
                                 }
                             ]
                         }
@@ -91,48 +181,103 @@
                 {
                     "name": "automation",
                     "label": "Automation",
+                    "subtitle": "Automation",
+                    "detail": [
+                        {"paragraph" : "//TODO "},
+                        {"paragraph" : "Lorem ipsum dolor sit amet, consectetur ad"}
+                    ],
                     "children": [
                         {
-                            "name": "compliance-checks-linters",
-                            "label": "Linters"
+                            "name": "linters",
+                            "label": "Linters",
+                            "subtitle": "Automation to check the compliance (linters)",
+                            "detail": [
+                                {"paragraph" : "//TODO "},
+                                {"paragraph" : "Lorem ipsum dolor sit amet, consectetur ad"}
+                            ]
                         },
                         {
                             "name": "code-generation",
-                            "label": "Code Generation"
+                            "label": "Code Generation",
+                            "subtitle": "Contract 1st approach automation",
+                            "detail": [
+                                {"paragraph" : "//TODO "},
+                                {"paragraph" : "Lorem ipsum dolor sit amet, consectetur ad"}
+                            ]
                         },
                         {
                             "name": "test-runner",
-                            "label": "Test Runner"
+                            "label": "Test Runner",
+                            "subtitle": "Test Automation",
+                            "detail": [
+                                {"paragraph" : "//TODO "},
+                                {"paragraph" : "Lorem ipsum dolor sit amet, consectetur ad"}
+                            ]
                         },
                         {
                             "name": "ci-cd-platform",
-                            "label": "CI/CD Platform"
+                            "label": "CI/CD Platform",
+                            "subtitle": "CI/CD Platform",
+                            "detail": [
+                                {"paragraph" : "//TODO "},
+                                {"paragraph" : "Lorem ipsum dolor sit amet, consectetur ad"}
+                            ]
                         },
                         {
-                            "name": "datasets-loader",
-                            "label": "Test data Load"
+                            "name": "data-tests",
+                            "label": "Data Tests",
+                            "subtitle": "Loading datasets for testing",
+                            "detail": [
+                                {"paragraph" : "//TODO "},
+                                {"paragraph" : "Lorem ipsum dolor sit amet, consectetur ad"}
+                            ]
                         }
                     ]
                 },
                 {
                     "name": "wiki",
-                    "label": "Wiki"
+                    "label": "Wiki",
+                    "subtitle": "Wiki for documentation",
+                    "detail": [
+                        {"paragraph" : "//TODO "},
+                        {"paragraph" : "Lorem ipsum dolor sit amet, consectetur ad"}
+                    ]
                 },
                 {
                     "name": "dev-portal",
                     "label": "Dev Portal",
+                    "subtitle": "Dev Portal",
+                    "detail": [
+                        {"paragraph" : "//TODO "},
+                        {"paragraph" : "Lorem ipsum dolor sit amet, consectetur ad"}
+                    ],
                     "children": [
                         {
-                            "name": "operational-model",
-                            "label": "Operational Model",
+                            "name": "user-experience",
+                            "label": "User Experience",
+                            "subtitle": "X as a Ticket",
+                            "detail": [
+                                {"paragraph" : "//TODO "},
+                                {"paragraph" : "Lorem ipsum dolor sit amet, consectetur ad"}
+                            ],
                             "children": [
                                 {
                                     "name": "x-as-a-service",
-                                    "label": "X as a Service"
+                                    "label": "X as a Service",
+                                    "subtitle": "X as a Service : Self Service oriented platform",
+                                    "detail": [
+                                        {"paragraph" : "//TODO "},
+                                        {"paragraph" : "Lorem ipsum dolor sit amet, consectetur ad"}
+                                    ]
                                 },
                                 {
                                     "name": "x-as-a-ticket",
-                                    "label": "X as a Ticket"
+                                    "label": "X as a Ticket",
+                                    "subtitle": "X as a Ticket",
+                                    "detail": [
+                                        {"paragraph" : "//TODO "},
+                                        {"paragraph" : "Lorem ipsum dolor sit amet, consectetur ad"}
+                                    ]
                                 }
                             ]
                         }
@@ -162,7 +307,12 @@
         },
         {
             "name": "governance-dimension",
-            "label": "Governance"
+            "label": "Governance",
+            "subtitle": "API Governance",
+            "detail": [
+                {"paragraph" : "//TODO "},
+                {"paragraph" : "Lorem ipsum dolor sit amet, consectetur ad"}
+            ]
         }
     ]
 }

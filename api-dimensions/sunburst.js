@@ -134,7 +134,7 @@ const parentLabel = svg.selectAll(".circle")
 
 //ajout du svg au DOM
 container.append(svg.node());
-insertHtmlDetail(null);
+insertHtmlDetail(root.data);
 
 
 
@@ -153,7 +153,7 @@ function clicked(event, p) {
 function clickedDetail(event, p) {
     console.log("path of clicked element = " + p.path);
     //let filePath = p.path.replaceAll("/", "_");
-    insertHtmlDetail("./details/" + p.path + ".html");
+    insertHtmlDetail(p.data);
 }
 
 
@@ -222,23 +222,13 @@ function hoverOut(event, p) {
 
 
 
-async function insertHtmlDetail(filePath) {
-    let defaultPath = "./details/api-governance.html";
-    let html = null;
-    //console.log("filePath = " + filePath);
+async function insertHtmlDetail(data) {
+    d3.select("#h2-detail").html(data.subtitle);
 
-    try {
-        if (filePath != null) {
-            html = await d3.text(filePath);
-        } else {
-            html = await d3.text(defaultPath);
-        }
-    } catch (error) {
-        console.log("error fetching");
-        html = await d3.text(defaultPath);
+    d3.select("#p-detail").selectAll("p").remove();
+    
+    for (let i=0; i < data.detail.length; i++){
+        d3.select("#p-detail").append("p").html(data.detail[i].paragraph);
     }
-    console.log("html = " + html);
-
-    //console.log("html fetched = " + html);
-    d3.select(".detail").html(html);
+    
 }
