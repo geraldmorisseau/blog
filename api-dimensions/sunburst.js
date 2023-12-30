@@ -1,4 +1,7 @@
-import data from "./data.json" assert {type: "json"};
+
+//import data from './data.json' assert {type: 'json'};
+//failover pour Safari qui ne supporte pas les imports
+const { default: data } = await import("./data.json", { assert: { type: "json" } })
 
 
 // Copyright 2021-2023 Observable, Inc.
