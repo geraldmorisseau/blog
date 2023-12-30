@@ -75,9 +75,11 @@ const path = svg.append("g")
     .attr("d", d => arc(d.current));
 
 //on change le look du pointeur sur les éléments clickables    
-path.filter(d => d.children)
+path
+    .filter(d => d.children)
     .style("cursor", "pointer")
-    .on("click", clicked);
+
+path.on("click", clicked);
 
 //on change la couleur des arcs lorsque le pointeur passe dessus
 path.filter(d => d.children)
@@ -123,10 +125,13 @@ parent.on("click", clicked);
 const parentLabel = svg.selectAll(".circle")
     .append("text").text(root.data.label)
     .attr("fill-opacity", 1)
-    .attr("text-anchor", "middle");
+    .attr("text-anchor", "middle")
+    .attr("class", "center-circle")
+    .attr("font-weight", 900); //bold
 
 //ajout du svg au DOM
 container.append(svg.node());
+insertHtmlDetail(null);
 
 
 
@@ -134,8 +139,23 @@ function arcVisible(d) {
     return d.y1 <= 3 && d.y0 >= 1 && d.x1 > d.x0;
 }
 
-// Handle zoom on click.
 function clicked(event, p) {
+    clickedDetail(event, p);
+    if ((p.data.name == "api-governance") || (p.children)) {
+        clickedZoom(event, p);
+    }
+}
+
+
+function clickedDetail(event, p) {
+    console.log("path of clicked element = " + p.path);
+    //let filePath = p.path.replaceAll("/", "_");
+    insertHtmlDetail("./details/" + p.path + ".html");
+}
+
+
+// Handle zoom on click.
+function clickedZoom(event, p) {
 
     console.log('clikced : ' + event);
 
@@ -195,4 +215,27 @@ function hoverIn(event, p) {
 function hoverOut(event, p) {
     const fillOpacity = Number(path.filter(e => { return e.uuid == p.uuid }).attr("fill-opacity"));
     path.filter(e => { return e.uuid == p.uuid }).attr("fill-opacity", fillOpacity - 0.2);
+}
+
+
+
+async function insertHtmlDetail(filePath) {
+    let defaultPath = "./details/api-governance.html";
+    let html = null;
+    //console.log("filePath = " + filePath);
+
+    try {
+        if (filePath != null) {
+            html = await d3.text(filePath);
+        } else {
+            html = await d3.text(defaultPath);
+        }
+    } catch (error) {
+        console.log("error fetching");
+        html = await d3.text(defaultPath);
+    }
+    console.log("html = " + html);
+
+    //console.log("html fetched = " + html);
+    d3.select("#detail").html(html);
 }

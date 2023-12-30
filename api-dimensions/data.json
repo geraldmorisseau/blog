@@ -4,7 +4,37 @@
     "children": [
         {
             "name": "software-dimension",
-            "label": "Software Dimension"
+            "label": "Software Dimension",
+            "children": [
+                {
+                    "name": "api-provider-side",
+                    "label": "API Provider Side",
+                    "children": [
+                        {
+                            "name": "build",
+                            "label": "BUILD"
+                        },
+                        {
+                            "name": "run",
+                            "label": "RUN"
+                        }
+                    ]
+                },
+                {
+                    "name": "api-consumer-side",
+                    "label": "API Consumer Side",
+                    "children": [
+                        {
+                            "name": "build",
+                            "label": "BUILD"
+                        },
+                        {
+                            "name": "run",
+                            "label": "RUN"
+                        }
+                    ]
+                }
+            ]
         },
         {
             "name": "social-dimension",
@@ -19,116 +49,110 @@
             "label": "Platform Dimension",
             "children": [
                 {
-                    "name": "tools",
-                    "label": "Tools",
+                    "name": "gateway",
+                    "label": "Gateway",
                     "children": [
                         {
-                            "name": "gateway",
-                            "label": "Gateway",
+                            "name": "operational-model",
+                            "label": "Operational Model",
                             "children": [
                                 {
-                                    "name": "operational-model",
-                                    "label": "Operational Model",
-                                    "children": [
-                                        {
-                                            "name": "x-as-a-service",
-                                            "label": "X as a Service"
-                                        },
-                                        {
-                                            "name": "x-as-a-ticket",
-                                            "label": "X as a Ticket"
-                                        }
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "name": "api-manager",
-                            "label": "API Manager",
-                            "children": [
-                                {
-                                    "name": "operational-model",
-                                    "label": "Operational Model",
-                                    "children": [
-                                        {
-                                            "name": "x-as-a-service",
-                                            "label": "X as a Service"
-                                        },
-                                        {
-                                            "name": "x-as-a-ticket",
-                                            "label": "X as a Ticket"
-                                        }
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "name": "automation",
-                            "label": "Automation",
-                            "children": [
-                                {
-                                    "name": "compliance-checks-linters",
-                                    "label": "Compliance Checks (linter)"
+                                    "name": "x-as-a-service",
+                                    "label": "X as a Service"
                                 },
                                 {
-                                    "name": "code-generation",
-                                    "label": "Code Generation"
-                                },
-                                {
-                                    "name": "test-runner",
-                                    "label": "Test Runner"
-                                },
-                                {
-                                    "name": "ci-cd-platform",
-                                    "label": "CI/CD Platform"
-                                },
-                                {
-                                    "name": "datasets-loader",
-                                    "label": "Datasets Loader for testing"
+                                    "name": "x-as-a-ticket",
+                                    "label": "X as a Ticket"
                                 }
                             ]
-                        },
+                        }
+                    ]
+                },
+                {
+                    "name": "api-manager",
+                    "label": "API Manager",
+                    "children": [
                         {
-                            "name": "wiki",
-                            "label": "Wiki"
-                        },
-                        {
-                            "name": "dev-portal",
-                            "label": "Dev Portal",
+                            "name": "operational-model",
+                            "label": "Operational Model",
                             "children": [
                                 {
-                                    "name": "operational-model",
-                                    "label": "Operational Model",
-                                    "children": [
-                                        {
-                                            "name": "x-as-a-service",
-                                            "label": "X as a Service"
-                                        },
-                                        {
-                                            "name": "x-as-a-ticket",
-                                            "label": "X as a Ticket"
-                                        }
-                                    ]
+                                    "name": "x-as-a-service",
+                                    "label": "X as a Service"
+                                },
+                                {
+                                    "name": "x-as-a-ticket",
+                                    "label": "X as a Ticket"
                                 }
                             ]
+                        }
+                    ]
+                },
+                {
+                    "name": "automation",
+                    "label": "Automation",
+                    "children": [
+                        {
+                            "name": "compliance-checks-linters",
+                            "label": "Compliance Checks (linter)"
                         },
                         {
-                            "name": "api-marketplace",
-                            "label": "API Marketplace",
+                            "name": "code-generation",
+                            "label": "Code Generation"
+                        },
+                        {
+                            "name": "test-runner",
+                            "label": "Test Runner"
+                        },
+                        {
+                            "name": "ci-cd-platform",
+                            "label": "CI/CD Platform"
+                        },
+                        {
+                            "name": "datasets-loader",
+                            "label": "Datasets Loader for testing"
+                        }
+                    ]
+                },
+                {
+                    "name": "wiki",
+                    "label": "Wiki"
+                },
+                {
+                    "name": "dev-portal",
+                    "label": "Dev Portal",
+                    "children": [
+                        {
+                            "name": "operational-model",
+                            "label": "Operational Model",
                             "children": [
                                 {
-                                    "name": "operational-model",
-                                    "label": "Operational Model",
-                                    "children": [
-                                        {
-                                            "name": "x-as-a-service",
-                                            "label": "X as a Service"
-                                        },
-                                        {
-                                            "name": "x-as-a-ticket",
-                                            "label": "X as a Ticket"
-                                        }
-                                    ]
+                                    "name": "x-as-a-service",
+                                    "label": "X as a Service"
+                                },
+                                {
+                                    "name": "x-as-a-ticket",
+                                    "label": "X as a Ticket"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "api-marketplace",
+                    "label": "API Marketplace",
+                    "children": [
+                        {
+                            "name": "operational-model",
+                            "label": "Operational Model",
+                            "children": [
+                                {
+                                    "name": "x-as-a-service",
+                                    "label": "X as a Service"
+                                },
+                                {
+                                    "name": "x-as-a-ticket",
+                                    "label": "X as a Ticket"
                                 }
                             ]
                         }

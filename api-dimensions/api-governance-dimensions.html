@@ -4,19 +4,28 @@
   path {
     stroke: #fff;
   }
-/*
-  .sunburst-node-arc {
-    fill-opacity: 0.6;
+
+  .row {
+    display: flex;
   }
 
-  .sunburst-node-arc:hover {
-    fill-opacity: 0.3;
+  .column1 {
+    flex: 80%;
   }
-  */
+
+  .column2 {
+    flex: 20%;
+  }
 </style>
 
 <body>
-  <div id="container"></div>
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script type="module" src="./sunburst.js"></script>
+  <div class="row">
+    <div id="container" class="column1"></div>
+    <div class="column2">
+      <div id="detail"></div>
+    </div>
+  <div class="row"></div>
+  </div>
 </body>
