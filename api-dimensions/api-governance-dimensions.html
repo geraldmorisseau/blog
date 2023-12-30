@@ -1,31 +1,87 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-<style>
-  path {
-    stroke: #fff;
-  }
 
-  .row {
-    display: flex;
-  }
 
-  .column1 {
-    flex: 70%;
-  }
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sriracha" rel="stylesheet">
 
-  .column2 {
-    flex: 30%;
-  }
-</style>
+  <style>
+    path {
+      stroke: #fff;
+    }
 
-<body>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    main {
+      max-width: 1000px;
+    }
+
+    body * {
+      font-family: 'Permanent Marker', sans-serif;
+    }
+
+    H1 {
+      font-size: 64px;
+    }
+
+    H2 {
+
+      font-size: 48px;
+    }
+
+    p {
+      font-family: 'Sriracha', sans-serif;
+      font-size: 20px;
+      text-indent: 20px;
+    }
+
+    .sunburst .circle * {      
+      font-size: 36px;
+    }
+
+    .sunburst * {
+      font-family: 'Permanent Marker', sans-serif;
+      font-size: 16px;
+    }
+
+  </style>
+
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script type="module" src="./sunburst.js"></script>
-  <div class="row">
-    <div id="container" class="column1"></div>
-    <div class="column2">
-      <div id="detail"></div>
+
+</head>
+
+<body>
+
+  <header>header</header>
+
+  <main>
+    <H1>360° API Governance</H1>
+    <div id="intro">
+      <p>
+        Aenean maximus lacinia augue at rhoncus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Etiam scelerisque, dui id dictum ultricies, urna mauris sollicitudin est, non viverra turpis nulla sit amet
+        enim.
+        Nunc ac arcu et arcu ullamcorper pretium vehicula vel est. Duis facilisis tortor nec felis luctus, elementum
+        eleifend lacus luctus.
+        Sed pharetra pulvinar lorem sed efficitur. Cras massa nisi, congue ac tellus ut, elementum fermentum quam.
+        Aliquam ultricies mauris in erat aliquam, non sollicitudin ipsum bibendum. Donec vestibulum ligula non velit
+        bibendum finibus.
+        Duis at lorem tristique, mattis risus quis, ultricies purus.
+      </p>
     </div>
-  <div class="row"></div>
-  </div>
+    <div id="container" class="sunburst"></div>
+    <div id="detail" class="detail"></div>
+  </main>
+
+  <footer>footer</footer>
+
 </body>

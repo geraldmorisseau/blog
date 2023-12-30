@@ -4,11 +4,11 @@
     "children": [
         {
             "name": "software-dimension",
-            "label": "Software Dimension",
+            "label": "Software",
             "children": [
                 {
                     "name": "api-provider-side",
-                    "label": "API Provider Side",
+                    "label": "Provider Side",
                     "children": [
                         {
                             "name": "build",
@@ -22,7 +22,7 @@
                 },
                 {
                     "name": "api-consumer-side",
-                    "label": "API Consumer Side",
+                    "label": "Consumer Side",
                     "children": [
                         {
                             "name": "build",
@@ -38,15 +38,15 @@
         },
         {
             "name": "social-dimension",
-            "label": "Social Dimension"
+            "label": "Social"
         },
         {
             "name": "business-dimension",
-            "label": "Business Dimension"
+            "label": "Business"
         },
         {
             "name": "platform-dimension",
-            "label": "Platform Dimension",
+            "label": "Platform",
             "children": [
                 {
                     "name": "gateway",
@@ -94,7 +94,7 @@
                     "children": [
                         {
                             "name": "compliance-checks-linters",
-                            "label": "Compliance Checks (linter)"
+                            "label": "Linters"
                         },
                         {
                             "name": "code-generation",
@@ -110,7 +110,7 @@
                         },
                         {
                             "name": "datasets-loader",
-                            "label": "Datasets Loader for testing"
+                            "label": "Test data Load"
                         }
                     ]
                 },
@@ -140,7 +140,7 @@
                 },
                 {
                     "name": "api-marketplace",
-                    "label": "API Marketplace",
+                    "label": "Marketplace",
                     "children": [
                         {
                             "name": "operational-model",
@@ -162,7 +162,7 @@
         },
         {
             "name": "governance-dimension",
-            "label": "Governance Dimension"
+            "label": "Governance"
         }
     ]
 }

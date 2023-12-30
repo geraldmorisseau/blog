@@ -35,7 +35,7 @@ const sort = (a, b) => d3.descending(a.value, b.value); // how to sort nodes pri
 //const getlabel = d => d.label; // given a node d, returns the name to display on the rectangle
 const link = null; // given a node d, its link (if any)
 const linkTarget = "_blank"; // the target attribute for links (if any)
-const width = 928; // outer width, in pixels
+const width = 1000; // outer width, in pixels
 const height = width; // outer height, in pixels
 const margin = 1; // shorthand for margins
 const marginTop = margin; // top margin, in pixels
@@ -129,8 +129,8 @@ const parentLabel = svg.selectAll(".circle")
     .append("text").text(root.data.label)
     .attr("fill-opacity", 1)
     .attr("text-anchor", "middle")
-    .attr("class", "center-circle")
-    .attr("font-weight", 900); //bold
+    .attr("class", "center-circle");
+    //.attr("font-weight", 900); //bold
 
 //ajout du svg au DOM
 container.append(svg.node());
@@ -240,5 +240,5 @@ async function insertHtmlDetail(filePath) {
     console.log("html = " + html);
 
     //console.log("html fetched = " + html);
-    d3.select("#detail").html(html);
+    d3.select(".detail").html(html);
 }
